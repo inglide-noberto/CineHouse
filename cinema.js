@@ -28,10 +28,10 @@ adicionarFilme(3, "Harry Potter",150, ["Daniel Radcliff", "Emma Watson", "Rupert
 
 //console.log(catalogo);
 function buscarFilme(codigo){
-   if(catalogo[codigo].includes(catalogo)){
-        indice = catalogo.indexOf(codigo);
-
-        return catalogo[{codigo}];
+   for (let i= 0; i<= catalogo.length; i++){
+       if(codigo == catalogo[i].codigo){
+           return catalogo[i];
+       }
    }
    
 }
