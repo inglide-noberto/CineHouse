@@ -4,11 +4,11 @@ const alunos = [
     "      Julio",
     "      Eder"
 ]
-//for (let i= 0; i<= alunos.length; i++){
-  //        console.log(alunos[i].trim());
-    //    }  
+for (let i= 0; i< alunos.length; i++){
+         console.log(alunos[i].trim());
+       }  
 
-//console.log(minhaString.trim());
+console.log(minhaString.trim());
 
 const catalogo = require("./database/catalogo.json");
 
@@ -27,11 +27,11 @@ function buscarFilme(codigo){
     }  
 }
 function alterarStatusEmCartaz(codigo){
-    for (let i= 0; i<= catalogo.length; i++){
+    for (let i= 0; i< catalogo.length; i++){
         if(catalogo[i].codigo == codigo){
             catalogo[i].emCartaz = !catalogo[i].emCartaz;
         }
     }
  }
  alterarStatusEmCartaz(2);
- console.log(catalogo)
+ //console.log(catalogo)
