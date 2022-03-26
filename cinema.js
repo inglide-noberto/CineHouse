@@ -24,7 +24,7 @@ function buscarFilme(codigo){
         if(codigo == catalogo[i].codigo){
            return catalogo[i];
         }
-    }  
+    } 
 }
 function alterarStatusEmCartaz(codigo){
     for (let i= 0; i< catalogo.length; i++){
